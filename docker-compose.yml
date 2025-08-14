@@ -1,0 +1,28 @@
+services:
+  web:
+    build: .
+    command: gunicorn dorashop.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DEBUG=True
+      - DB_NAME=dorashop
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_HOST=db
+
+  db:
+    image: postgres:15
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_DB: dorashop
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+volumes:
+  postgres_data:
