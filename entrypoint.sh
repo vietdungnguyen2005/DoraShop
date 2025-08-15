@@ -15,9 +15,14 @@ done
 
 echo "Database is ready!"
 
+echo "📦 Collecting static files..."
+python manage.py collectstatic --noinput
+
 # Chạy migrations của Django
 echo "Applying database migrations..."
 python manage.py migrate
+
+# docker-compose exec web python manage.py createsuperuser
 
 # 'exec "$@"' là một lệnh đặc biệt.
 # "$@" đại diện cho tất cả các đối số được truyền vào script.

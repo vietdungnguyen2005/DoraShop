@@ -20,9 +20,6 @@ COPY . .
 COPY ./entrypoint.sh .
 RUN chmod +x ./entrypoint.sh
 
-# Collect static files (for production)
-RUN python manage.py collectstatic --noinput
-
 ENTRYPOINT ["/app/entrypoint.sh"]
 
 # Default command
