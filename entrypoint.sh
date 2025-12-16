@@ -25,6 +25,9 @@ python manage.py migrate
 echo "Kiểm tra và tạo admin nếu cần..."
 python manage.py create_admin
 
+echo "Seeding master data..."
+python manage.py loaddata initial_data.json
+
 # 'exec "$@"' là một lệnh đặc biệt.
 # "$@" đại diện cho tất cả các đối số được truyền vào script.
 # Trong trường hợp này, nó chính là lệnh CMD từ Dockerfile:

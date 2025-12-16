@@ -1,0 +1,68 @@
+[
+{
+  "model": "products.comic",
+  "pk": 1,
+  "fields": {
+    "title": "Doraemon tập 24 - Nobita ở Vương quốc chó mèo",
+    "author": "Fujiko F Fujio",
+    "price": "22000.00",
+    "stock": 10,
+    "image": "comics/doraemon-truyendai24.jpg"
+  }
+},
+{
+  "model": "products.comic",
+  "pk": 2,
+  "fields": {
+    "title": "Doraemon tập 23 - Nobita và Những pháp sư gió bí ẩn",
+    "author": "Fujiko F Fujio",
+    "price": "22000.00",
+    "stock": 5,
+    "image": "comics/doraemon-truyendai23.jpg"
+  }
+},
+{
+  "model": "products.comic",
+  "pk": 3,
+  "fields": {
+    "title": "Doraemon tập 22 - Nobita và Vương quốc Robot",
+    "author": "Fujiko F Fujio",
+    "price": "22000.00",
+    "stock": 7,
+    "image": "comics/doraemon-truyendai22.jpg"
+  }
+},
+{
+  "model": "products.comic",
+  "pk": 4,
+  "fields": {
+    "title": "Doraemon tập 21 - Nobita và Những dũng sĩ có cánh",
+    "author": "Fujiko F Fujio",
+    "price": "22000.00",
+    "stock": 8,
+    "image": "comics/doraemon-truyendai21.jpg"
+  }
+},
+{
+  "model": "products.comic",
+  "pk": 5,
+  "fields": {
+    "title": "Doraemon tập 20 - Nobita và Truyền thuyết vua mặt trời",
+    "author": "Fujiko F Fujio",
+    "price": "22000.00",
+    "stock": 10,
+    "image": "comics/doraemon-truyendai20.jpg"
+  }
+},
+{
+  "model": "products.comic",
+  "pk": 6,
+  "fields": {
+    "title": "Doraemon tập 19 - Nobita - Vũ trụ phiêu lưu kí",
+    "author": "Fujiko F Fujio",
+    "price": "22000.00",
+    "stock": 4,
+    "image": "comics/doraemon-truyendai19.jpg"
+  }
+}
+]
