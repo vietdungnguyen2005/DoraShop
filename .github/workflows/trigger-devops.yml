@@ -1,0 +1,17 @@
+name: Trigger DevOps Update
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Dispatch Event
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.DEVOPS_PAT }}
+          repository: kenjima3301/NT548-DevOps 
+          event-type: update-submodule
+          client-payload: '{"sha": "${{ github.sha }}"}'
